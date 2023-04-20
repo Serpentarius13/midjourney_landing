@@ -3,7 +3,7 @@ import SectionSkeleton from "./shared/SectionSkeleton";
 
 export default function About() {
   return (
-    <SectionSkeleton title="About">
+    <SectionSkeleton title="About" id="about">
       <div className="w-full flex gap-[6rem] justify-center md:flex-col md:items-center">
         <img
           alt="My photo"

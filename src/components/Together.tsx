@@ -13,9 +13,10 @@ export default function Together() {
         <img
           src="/img/discord-call.png"
           alt="Photo of discord call with me"
-          className="max-w-[80%]  ml-auto"
+          className="max-w-[80%] min-h-[10rem] object-cover round  ml-auto"
         />
       </div>
+      
     </SectionSkeleton>
   );
 }

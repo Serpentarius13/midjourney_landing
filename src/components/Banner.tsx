@@ -2,7 +2,9 @@ import { Button } from "./shared/Button";
 import Heading from "./shared/Heading";
 
 export default function Banner() {
-  
+  function scrollDown() {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <header className="w-screen h-screen flex flex-col gap-[1rem] items-center justify-center">
       <Heading>Midjourney Assistant</Heading>
@@ -12,7 +14,9 @@ export default function Banner() {
         professional. Receive that which you seek
       </p>
 
-      <Button variant="outline">Try now</Button>
+      <Button variant="outline" onClick={scrollDown}>
+        Try now
+      </Button>
     </header>
   );
 }

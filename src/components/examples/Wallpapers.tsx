@@ -13,8 +13,8 @@ export default function Wallpapers() {
           className="w-[54rem] h-[30.2rem]"
         />
 
-        <div className="flex gap-grid max-w-full">
-          <img src="/img/wallpapers/2.png" className="w-[25rem] h-[45rem] md:w-[15rem] md:h-[30rem]" />
+        <div className="flex gap-grid max-w-full sm:flex-col">
+          <img src="/img/wallpapers/2.png" className="w-[25rem] h-[45rem]" />
           <img src="/img/wallpapers/3.png" className="md:w-[25rem]" />
         </div>
       </div>

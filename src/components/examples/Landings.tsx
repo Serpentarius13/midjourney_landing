@@ -7,7 +7,7 @@ export default function Landings() {
       text="Embrace plenty of new idea for your upcoming project. If you like the result, I can make a website out of it for you."
       isReverse
     >
-      <div className="flex gap-grid">
+      <div className="flex gap-grid md:flex-col">
         <img
           src="/img/landings/1.png"
           alt="Landing page with deep blue, aquamarine and dark tones"
