@@ -1,0 +1,41 @@
+@mixin gtDesktopHuge {
+  @media (min-width: 1950px) {
+    @content;
+  }
+}
+
+@mixin ltDesktopBig {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin ltDesktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin ltTablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin ltSmallTablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin ltPhone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin ltPhoneSmall {
+  @media (max-width: 400px) {
+    @content;
+  }
+}

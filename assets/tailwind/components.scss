@@ -1,0 +1,13 @@
+@layer components {
+  .center {
+    @apply w-full mx-auto max-w-[120rem];
+  }
+
+  .section-padding {
+    @apply lg:p-12 md:p-8 sm:p-4;
+  }
+
+  .round {
+    @apply rounded-[3rem];
+  }
+}

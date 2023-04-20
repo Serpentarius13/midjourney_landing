@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./utilities/normalize.scss";
+@import "./utilities/media.scss";
+
+@import "./tailwind/components.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100%;
+  min-width: 100%;
+}
