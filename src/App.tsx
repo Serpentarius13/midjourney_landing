@@ -7,6 +7,7 @@ import Landings from "./components/examples/Landings";
 import Wallpapers from "./components/examples/Wallpapers";
 import Pricement from "./components/pricement/Pricement";
 import SectionSkeleton from "./components/shared/SectionSkeleton";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
   return (
