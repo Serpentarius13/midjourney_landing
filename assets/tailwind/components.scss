@@ -10,6 +10,10 @@
   .round {
     @apply rounded-[3rem];
   }
+
+  .transition-translate {
+    transition: 1s ease transform;
+  }
 }
 
 .lds-dual-ring {

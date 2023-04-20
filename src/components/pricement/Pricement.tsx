@@ -40,8 +40,12 @@ export default function Pricement() {
         <div className="absolute lg:relative">
           <Tariff price={tariffFive.price} list={tariffFive.perks} isBig />
         </div>
-        <Tariff price={tariffOne.price} list={tariffOne.perks} />
-        <Tariff price={tariffThree.price} list={tariffThree.perks} />
+        <div className="hover:-translate-x-[5rem] lg:hover:translate-x-0  transition-translate">
+          <Tariff price={tariffOne.price} list={tariffOne.perks} />
+        </div>
+        <div className="hover:translate-x-[5rem]  lg:hover:translate-x-0 transition-translate">
+          <Tariff price={tariffThree.price} list={tariffThree.perks} />
+        </div>
       </div>
     </SectionSkeleton>
   );
