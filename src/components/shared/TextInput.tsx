@@ -16,7 +16,7 @@ export default function TextInput({
       <span className="text-[2.4rem] font-josefine">{label}</span>
       {isTextArea ? (
         <textarea
-          className={`${baseClass} min-h-[25rem]`}
+          className={`${baseClass} min-h-[25rem] resize-none`}
           onChange={onChange}
         />
       ) : (

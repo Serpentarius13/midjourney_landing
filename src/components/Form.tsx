@@ -26,6 +26,7 @@ export default function FeedbackForm() {
 
   const [isDiscordShowing, setDiscord] = useState(false);
 
+
   function openDiscord() {
     setDiscord(true);
   }
@@ -34,7 +35,7 @@ export default function FeedbackForm() {
     try {
       await emailjs.send(
         "service_bgnfi8b",
-        "template_wag1yu8",
+        "template_iymcter",
         { text, contact, name },
         import.meta.env.VITE_EMAIL_KEY
       );
@@ -96,7 +97,7 @@ export default function FeedbackForm() {
       ) : (
         <form
           onSubmit={onSubmit}
-          className="flex flex-col gap-[1rem] w-[58.7rem] max-w-[95%] mx-auto relative  "
+          className="flex flex-col gap-[1rem] w-[58.7rem] max-w-[85%] mx-auto relative  "
         >
           <TextInput label="Your name*" onChange={handleName} />
           <TextInput
@@ -105,7 +106,7 @@ export default function FeedbackForm() {
           />
           <TextInput label="A message to me" onChange={handleText} isTextArea />
 
-          <Button className="max-w-[30rem] mx-auto w-full">Send</Button>
+          <Button className="max-w-[30rem] mx-auto w-full lg:max-w-[20rem]">Send</Button>
 
           {formLoading.isLoading && (
             <div className="w-full h-full bg-white absolute flex items-center jusitify-center ">
