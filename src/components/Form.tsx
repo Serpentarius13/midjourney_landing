@@ -29,7 +29,10 @@ export default function FeedbackForm() {
         <button onClick={openDiscord} className={linkClassName}>
           discord{" "}
         </button>{" "}
-        {isDiscordShowing && <span>крышечка крышечка крышечка хуй#6613</span>}or{" "}
+        {isDiscordShowing && (
+          <span>(крышечка крышечка крышечка хуй#6613) </span>
+        )}
+        or{" "}
         <a className={linkClassName} href="https://t.me/cvrsll">
           telegram
         </a>
