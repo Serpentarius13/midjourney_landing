@@ -16,7 +16,7 @@ export default function Landings() {
 
         <div className="flex flex-col gap-grid">
           <img src="/img/landings/2.png" className="w-[39.3rem]" />
-          <img src="/img/landings/3.png" className="h-[48.2rem] w-[26.5rem]" />
+          <img src="/img/landings/3.png" className="h-[48.2rem] w-[26.5rem] round" />
         </div>
       </div>
     </ExampleSkeleton>
