@@ -15,12 +15,24 @@ export default function FeedbackForm() {
 
   console.log(text);
 
+  const [isDiscordShowing, setDiscord] = useState(false);
+
+  function openDiscord() {
+    setDiscord(true);
+  }
+
   return (
     <SectionSkeleton title="Contact me">
       <p className="text-[2.4rem] font-josefin text-center">
         {" "}
-        You can find me in <a className={linkClassName}>discord </a>or{" "}
-        <a className={linkClassName}>telegram</a>
+        You can find me in{" "}
+        <button onClick={openDiscord} className={linkClassName}>
+          discord{" "}
+        </button>{" "}
+        {isDiscordShowing && <span>крышечка крышечка крышечка хуй#6613</span>}or{" "}
+        <a className={linkClassName} href="https://t.me/cvrsll">
+          telegram
+        </a>
         <br />
         Also you can fill the form below and I will contact you myself.
       </p>
@@ -33,9 +45,7 @@ export default function FeedbackForm() {
         />
         <TextInput label="A message to me" onChange={handleText} isTextArea />
 
-        <Button className="max-w-[30rem] mx-auto w-full">
-            Send
-        </Button>
+        <Button className="max-w-[30rem] mx-auto w-full">Send</Button>
       </form>
     </SectionSkeleton>
   );
